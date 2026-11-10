@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Adaptive icon foreground: Gigachad bust (bitmap, flat square box inside the
+     66dp safe zone) with a gold play badge overlapping the lower-right. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- bust: square 64dp box (22dp insets), centred on the icon -->
+    <item
+        android:left="22dp"
+        android:top="21dp"
+        android:right="22dp"
+        android:bottom="23dp">
+        <bitmap
+            android:src="@drawable/ic_launcher_gigachad"
+            android:gravity="fill" />
+    </item>
+    <!-- play badge: full 108dp viewport, disc centred at (67,67) -->
+    <item android:drawable="@drawable/ic_launcher_play_badge" />
+</layer-list>

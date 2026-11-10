@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Monochrome: Gigachad bust silhouette (stylised profile, left-of-centre)
+     + separated play disc with knocked-out triangle at lower right.
+     Single android:fillColor, no gradients. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <group
+        android:scaleX="0.94"
+        android:scaleY="0.94"
+        android:pivotX="54"
+        android:pivotY="54"
+        android:translateY="2.5">
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:pathData="M29.4,71.4
+                C24.6,70.6 20.4,55 21.6,45.5
+                C22.6,37 27.2,24.5 36.4,21.2
+                C43,18.7 49.3,20.9 51.9,25.4
+                C52.7,27.4 53.5,29.9 53.7,32.6
+                C54,36 54.3,38.2 53.2,39.6
+                C55.2,40.8 56.8,42.4 57.4,44
+                C57.6,45 55.9,46 54.3,46.2
+                C55.1,47.8 55.2,49.6 54.5,51.2
+                C55.1,52.8 55.4,54.6 55.2,56.6
+                C55,60.2 53.2,63.4 49.8,65.6
+                C45.8,67.8 40.6,68.2 36.8,67.6
+                C34.4,67.2 32.2,68 31,68.8
+                C30.2,69.4 29.6,70.4 29.4,71.4
+                Z" />
+    </group>
+
+    <!-- play badge: disc with triangle knockout (even-odd) -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="
+            M57.5,68 a11,11 0 1,0 22,0 a11,11 0 1,0 -22,0 Z
+            M64.6,62.4 L64.6,73.6 L73.4,68 Z" />
+</vector>

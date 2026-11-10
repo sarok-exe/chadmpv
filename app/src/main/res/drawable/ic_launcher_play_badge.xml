@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Crisp geometric play badge: near-black disc + gold ring + gold gradient triangle -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- badge disc -->
+    <path
+        android:pathData="M54,67 m-13,0 a13,13 0,1,1 26,0 a13,13 0,1,1 -26,0 Z"
+        android:fillColor="#17110B" />
+
+    <!-- gold ring -->
+    <path
+        android:pathData="M54,67 m-11.6,0 a11.6,11.6 0,1,1 23.2,0 a11.6,11.6 0,1,1 -23.2,0 Z"
+        android:strokeColor="#CFA453"
+        android:strokeWidth="1.2"
+        android:fillColor="#00000000" />
+
+    <!-- play triangle, optically centred, rounded joins -->
+    <path
+        android:pathData="M64.2,61.4 L64.2,72.6 L73.4,67 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startColor="#FBE3A6"
+                android:centerColor="#F2C979"
+                android:endColor="#D89B42"
+                android:startX="64.2"
+                android:startY="61.4"
+                android:endX="73.4"
+                android:endY="72.6"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+</vector>
