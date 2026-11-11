@@ -1,27 +1,47 @@
-# <img alt="app icon" src=".github/assets/app_icon.svg" width="48" /> mpvKt
-A media player for Android based on [mpv-android](https://github.com/mpv-android/mpv-android) aiming to provide a *nicer* user interface over the original.
+# <img alt="app icon" src=".github/assets/app_icon.svg" width="48" /> chadmpv
 
-[![Build](https://github.com/abdallahmehiz/mpvKt/actions/workflows/build.yml/badge.svg)](https://github.com/abdallahmehiz/mpvKt/actions/workflows/build.yml)
-## Additional features
-- Nicer player UI
+A media player for Android based on [mpv-android](https://github.com/mpv-android/mpv-android), built on libmpv.
+chadmpv is a personal fork that combines the player UI of **mpvKt** with the extra playback features of **mpvEx**,
+and adds its own library caching, fast native video scanning, and a queue-based prev/next player.
+
+## Features
+
+- Nicer player UI with centered previous/next controls
+- Cached video library with instant startup and background rescanning
+- Playback queue: skip to the previous/next video in the folder, with optional auto play next
+- Auto play next video toggle in the player controls
 - Better playback history implementation
 - Easier customization
-- Sleep timer, Speed presets
+- Sleep timer, speed presets
 - Smoother PiP
 
-## Showcase
+## Build
 
-<img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/1_en-US.png" width="24%" /> <img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/2_en-US.png" width="24%" /> <img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/3_en-US.png" width="24%"> <img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/4_en-US.png" width="24%" />
-<img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/5_en-US.png" width="49%" /> <img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/6_en-US.png" width="49%" />
-<img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/7_en-US.png" width="49%" /> <img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/8_en-US.png" width="49%" />
+Requires JDK 21 and Gradle 8.14.x. The Rust scanner (`rust/`) is cross-compiled by the
+`buildRustScanner` Gradle task:
 
-## Installation
-you can download the app from the [Github releases page](https://github.com/abdallahmehiz/mpvKt/releases) or one of the official sources listed below:
+```sh
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+./gradlew :app:assembleDebug --no-daemon --max-workers=1 \
+  -Dorg.gradle.jvmargs="-Xmx1024m -XX:MaxMetaspaceSize=512m" \
+  -Dkotlin.daemon.jvmargs="-Xmx768m"
+```
 
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on-en.svg" height="80">](https://f-droid.org/en/packages/live.mehiz.mpvkt/)
-[<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" height="80">](https://apt.izzysoft.de/fdroid/index/apk/live.mehiz.mpvkt)
-[<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="80">](https://play.google.com/store/apps/details?id=live.mehiz.mpvkt)
+## Credits
 
-You can also access nightly builds from [here](https://github.com/abdallahmehiz/mpvKt/actions/workflows/nightlies.yml)
-## Acknowledgments
-- [mpv-android](https://github.com/mpv-android) for the base mpv library to use for this project.
+chadmpv would not exist without the projects it is built on. Full credit goes to their authors:
+
+- **[mpvKt](https://github.com/abdallahmehiz/mpvKt)** by [abdallahmehiz](https://github.com/abdallahmehiz) —
+  the upstream project this fork is based on. Most of the player UI, preferences, and architecture
+  originate here.
+- **[mpvEx / mpvExtended](https://github.com/marlboro-advance/mpvEx)** by
+  [marlboro-advance](https://github.com/marlboro-advance) — source of the extended playback features
+  (playback history, PiP behaviour, and more) that were merged into this fork.
+- **[mpv-android](https://github.com/mpv-android/mpv-android)** — the libmpv-based Android player and JNI
+  bindings that power playback in all of the projects above.
+
+Modifications, additional features, and the chadmpv name are by **sarok**.
+
+## License
+
+Inherited from the upstream projects; see [LICENSE](LICENSE).

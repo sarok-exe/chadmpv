@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">mpvKt</string>
+    <string name="app_name" translatable="false">chadmpv</string>
 
     <string name="generic_reset">Redefinir</string>
     <string name="generic_share">Compartilhar</string>
@@ -207,7 +207,7 @@
     <string name="value_percentage_int" translatable="false">%d%%</string>
     <string name="value_percentage_float" translatable="false">%.2f\%%</string>
 
-    <string name="github_repo_url" translatable="false">https://github.com/abdallahmehiz/mpvKt</string>
+    <string name="github_repo_url" translatable="false">https://github.com/sarok-exe/chadmpv</string>
 
     <plurals name="plural_items">
         <item quantity="one">%1$d item</item>

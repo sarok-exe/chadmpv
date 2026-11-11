@@ -1,71 +1,71 @@
 CUSTOM BUTTONS
 ==============
 
-Custom buttons provides a way to execute lua code by pressing a button in the player. mpvKt also provides an interface to interact with some parts of the player.
+Custom buttons provides a way to execute lua code by pressing a button in the player. chadmpv also provides an interface to interact with some parts of the player.
 
-The interface is defined in a file placed in the ``scripts`` directory and can be accessed through the ``mpvkt`` table.
+The interface is defined in a file placed in the ``scripts`` directory and can be accessed through the ``chadmpv`` table.
 
 Lua interface
 -------------
 
-``mpvkt.show_text(text)``
+``chadmpv.show_text(text)``
     Display a message on the player.
 
-``mpvkt.hide_ui()``
+``chadmpv.hide_ui()``
     Hide the player UI.
 
-``mpvkt.show_ui()``
+``chadmpv.show_ui()``
     Show the player UI.
 
-``mpvkt.toggle_ui()``
+``chadmpv.toggle_ui()``
     Toggle the visibility of the player UI.
 
-``mpvkt.show_subtitle_settings()``
+``chadmpv.show_subtitle_settings()``
     Show the subtitle settings sheet.
 
-``mpvkt.show_subtitle_delay()``
+``chadmpv.show_subtitle_delay()``
     Show the subtitle delay sheet.
 
-``mpvkt.show_audio_delay()``
+``chadmpv.show_audio_delay()``
     Show the subtitle delay sheet.
 
-``mpvkt.show_video_filters()``
+``chadmpv.show_video_filters()``
     Show the video filters sheet.
 
-``mpvkt.set_button_title(text)``
+``chadmpv.set_button_title(text)``
     Change the title for the primary custom button.
 
-``mpvkt.reset_button_title(text)``
+``chadmpv.reset_button_title(text)``
     Reset the title for the primary custom button.
 
-``mpvkt.show_button()``
+``chadmpv.show_button()``
     Show the primary custom button.
 
-``mpvkt.hide_button()``
+``chadmpv.hide_button()``
     Hide the primary custom button.
 
-``mpvkt.toggle_button()``
+``chadmpv.toggle_button()``
     Toggle the visibility of the primary custom button.
 
-``mpvkt.seek_by(value)``
+``chadmpv.seek_by(value)``
     Seek by the specified number of seconds.
 
-``mpvkt.seek_to(value)``
+``chadmpv.seek_to(value)``
     Seek to the specified position in seconds.
 
-``mpvkt.seek_by_with_text(value, text)``
+``chadmpv.seek_by_with_text(value, text)``
     Seek by the specified number of seconds and display the given text.
 
-``mpvkt.seek_to_with_text(value, text)``
+``chadmpv.seek_to_with_text(value, text)``
     Seek to the specified position in seconds and display the given text.
 
-``mpvkt.hide_software_keyboard()``
+``chadmpv.hide_software_keyboard()``
     Hide the software keyboard.
 
-``mpvkt.show_software_keyboard()``
+``chadmpv.show_software_keyboard()``
     Show the software keyboard.
 
-``mpvkt.toggle_software_keyboard()``
+``chadmpv.toggle_software_keyboard()``
     Toggle the visibility of the software keyboard.
 
 Call a custom button from key input or from lua

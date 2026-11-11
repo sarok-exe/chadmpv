@@ -42,6 +42,8 @@
     <string name="library_info_date">Date modified</string>
     <string name="library_folder_header_clear">Back to all videos</string>
     <string name="library_folder_subtitle">%1$d videos · Newest: %2$s</string>
+    <string name="library_scroll_up">Scroll up</string>
+    <string name="library_scroll_down">Scroll down</string>
 
     <string name="pref_preferences">Preferences</string>
 
@@ -265,6 +267,9 @@
     <string name="player_seek_n_seconds">%d seconds</string>
     <string name="player_speed" translatable="false">%.2fx</string>
     <string name="player_gesture_seek_indicator" translatable="false">%c%s\n[%s]</string>
+    <string name="player_auto_play_next">Auto play next video</string>
+    <string name="player_auto_play_next_on">Auto play next: on</string>
+    <string name="player_auto_play_next_off">Auto play next: off</string>
 
     <string name="player_aspect_fit">Fit Screen</string>
     <string name="player_aspect_crop">Crop</string>
@@ -293,8 +298,8 @@
     <string name="value_percentage_int" translatable="false">%d%%</string>
     <string name="value_percentage_float" translatable="false">%.2f\%%</string>
 
-    <string name="github_repo_url" translatable="false">https://github.com/abdallahmehiz/mpvKt</string>
-    <string name="privacy_policy_url" translatable="false">https://abdallahmehiz.github.io/mpvKt/privacy_policy.html</string>
+    <string name="github_repo_url" translatable="false">https://github.com/sarok-exe/chadmpv</string>
+    <string name="privacy_policy_url" translatable="false">https://sarok-exe.github.io/chadmpv/privacy_policy.html</string>
     <string name="swap_the_volume_and_brightness_slider">Swap volume and brightness slider</string>
     <string name="pref_player_display_reduce_player_animation">Reduce player animation</string>
     <string name="pref_player_display_hide_player_control_time">Hide player control time</string>

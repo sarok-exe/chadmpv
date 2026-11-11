@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="false">
 
-    <live.mehiz.mpvkt.ui.player.MPVView
+    <live.sarok.chadmpv.ui.player.MPVView
         android:id="@+id/player"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

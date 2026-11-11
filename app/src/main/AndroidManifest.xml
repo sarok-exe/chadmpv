@@ -19,12 +19,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MpvKt"
+        android:theme="@style/Theme.Chadmpv"
         tools:targetApi="35">
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.MpvKt">
+            android:theme="@style/Theme.Chadmpv">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -40,7 +40,7 @@
             android:launchMode="singleTask"
             android:resizeableActivity="true"
             android:supportsPictureInPicture="true"
-            android:theme="@style/Theme.MpvKt">
+            android:theme="@style/Theme.Chadmpv">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 

@@ -15,7 +15,7 @@ plugins {
 }
 
 android {
-  namespace = "live.mehiz.mpvkt"
+  namespace = "live.sarok.chadmpv"
   compileSdk = 36
 
   sourceSets.getByName("main").jniLibs.srcDirs("src/main/jniLibs")
@@ -192,7 +192,7 @@ val rustScannerTargets = listOf(
   RustScannerTarget("aarch64-linux-android", "arm64-v8a", "aarch64-linux-android28-clang"),
 )
 
-val rustScannerDir = layout.projectDirectory.dir("rust")
+val rustScannerDir = rootProject.layout.projectDirectory.dir("rust")
 val rustScannerJniLibsDir = layout.projectDirectory.dir("src/main/jniLibs")
 val rustScannerLocalProperties = rootProject.file("local.properties")
 
